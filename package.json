@@ -1,8 +1,8 @@
 {
-  "name": "@harelpls/use-pusher",
-  "version": "7.2.1",
+  "name": "@imokhles/use-pusher",
+  "version": "1.0.0",
   "description": "A wrapper around pusher-js for easy-as hooks in React.",
-  "author": "@mayteio",
+  "author": "@imokhles",
   "keywords": [
     "react",
     "react hooks",
@@ -14,7 +14,7 @@
     "typescript"
   ],
   "license": "MIT",
-  "repository": "https://github.com/mayteio/use-pusher",
+  "repository": "https://github.com/imokhles/use-pusher",
   "files": [
     "dist",
     "react-native"

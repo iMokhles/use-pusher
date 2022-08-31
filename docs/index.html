@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@harelpls/use-pusher</title>
-	<meta name="description" content="Documentation for @harelpls/use-pusher">
+	<title>@imokhles/use-pusher</title>
+	<meta name="description" content="Documentation for @imokhles/use-pusher">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@harelpls/use-pusher</a>
+					<a href="index.html" class="title">@imokhles/use-pusher</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1>@harelpls/use-pusher</h1>
+			<h1>@imokhles/use-pusher</h1>
 		</div>
 	</div>
 </header>
@@ -64,13 +64,13 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#harelplsuse-pusher" id="harelplsuse-pusher" style="color: inherit; text-decoration: none;">
-					<h1><code>@harelpls/use-pusher</code></h1>
+				<a href="#imokhlesuse-pusher" id="imokhlesuse-pusher" style="color: inherit; text-decoration: none;">
+					<h1><code>@imokhles/use-pusher</code></h1>
 				</a>
 				<blockquote>
 					<p>Easy as <a href="https://reactjs.org/docs/hooks-intro.html">React hooks</a> that integrate with the <a href="https://github.com/pusher/pusher-js"><code>pusher-js</code></a> library.</p>
 				</blockquote>
-				<p><a href="https://www.npmjs.com/package/@harelpls/use-pusher"><img src="https://img.shields.io/npm/v/@harelpls/use-pusher.svg" alt="NPM"></a> <img src="https://badgen.net/badge//types/Typescript?icon=typescript" alt="Typed"></p>
+				<p><a href="https://www.npmjs.com/package/@imokhles/use-pusher"><img src="https://img.shields.io/npm/v/@imokhles/use-pusher.svg" alt="NPM"></a> <img src="https://badgen.net/badge//types/Typescript?icon=typescript" alt="Typed"></p>
 				<!-- START doctoc generated TOC please keep comment here to allow auto update -->
 				<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 				<ul>
@@ -97,7 +97,7 @@
 				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 					<h2>Install</h2>
 				</a>
-				<pre><code class="language-bash">yarn add @harelpls/use-pusher</code></pre>
+				<pre><code class="language-bash">yarn add @imokhles/use-pusher</code></pre>
 				<a href="#hooks" id="hooks" style="color: inherit; text-decoration: none;">
 					<h2>Hooks</h2>
 				</a>
@@ -114,7 +114,7 @@
 				</a>
 				<p>You must wrap your app with a <code>PusherProvider</code> and pass it config props for <a href="https://github.com/pusher/pusher-js"><code>pusher-js</code></a> initialisation.</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
-<span class="hljs-keyword">import</span> { PusherProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@harelpls/use-pusher&quot;</span>;
+<span class="hljs-keyword">import</span> { PusherProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@imokhles/use-pusher&quot;</span>;
 
 <span class="hljs-keyword">const</span> config = {
   <span class="hljs-comment">// required config props</span>
@@ -181,7 +181,7 @@
 					<h2><code>useTrigger</code></h2>
 				</a>
 				<p>A helper function to create a <strong>server triggered</strong> event. BYO server (See <a href="#trigger-server">Trigger Server</a> below). Pass in <code>triggerEndpoint</code> prop to <code>&lt;PusherProvider /&gt;</code>. Any auth headers from <code>config.auth.headers</code> automatically get passed to the <code>fetch</code> call.</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { useTrigger } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@harelpls/use-pusher&#x27;</span>;
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { useTrigger } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@imokhles/use-pusher&#x27;</span>;
 
 <span class="hljs-keyword">const</span> Example = <span class="hljs-function">() =&gt;</span> {.
   <span class="hljs-keyword">const</span> trigger = useTrigger();
@@ -196,7 +196,7 @@
 					<h2><code>usePusher</code></h2>
 				</a>
 				<p>Get access to the Pusher instance to do other things.</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { usePusher } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@harelpls/use-pusher&quot;</span>;
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { usePusher } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@imokhles/use-pusher&quot;</span>;
 
 <span class="hljs-keyword">const</span> Example = <span class="hljs-function">() =&gt;</span> {
   <span class="hljs-keyword">const</span> { client } = usePusher();
@@ -229,7 +229,7 @@
 					<p><em>I don&#39;t want a server though</em></p>
 				</blockquote>
 				<p>I hear ya. If you&#39;re feeling audacious, you can use <a href="https://pusher.com/docs/channels/using_channels/events#triggering-client-events">client events</a> to push directly from the client:</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { useChannel, useClientTrigger } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@harelpls/use-pusher&quot;</span>;
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { useChannel, useClientTrigger } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@imokhles/use-pusher&quot;</span>;
 
 <span class="hljs-keyword">const</span> Example = <span class="hljs-function">() =&gt;</span> {
   <span class="hljs-keyword">const</span> channel = useChannel(<span class="hljs-string">&quot;presence-ca&quot;</span>);
@@ -251,7 +251,7 @@
 				<p>Testing emitted events with jest can be achieved using <code>jest.mock</code> and <code>@testing-library/react</code> (or <code>enzyme</code>, though your tests should reflect what the user should see <strong>NOT</strong> how the component handles events internally):</p>
 				<pre><code class="language-typescript"><span class="hljs-comment">// Example.tsx</span>
 <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
-<span class="hljs-keyword">import</span> { useChannel, useEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@harelpls/use-pusher&quot;</span>;
+<span class="hljs-keyword">import</span> { useChannel, useEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@imokhles/use-pusher&quot;</span>;
 
 <span class="hljs-keyword">const</span> Example = <span class="hljs-function">() =&gt;</span> {
   <span class="hljs-keyword">const</span> [title, setTitle] = useState();
@@ -267,8 +267,8 @@
 
 <span class="hljs-comment">// mock out the result of the useChannel hook</span>
 <span class="hljs-keyword">const</span> mockChannel = <span class="hljs-keyword">new</span> PusherChannelMock();
-jest.mock(<span class="hljs-string">&quot;@harelpls/use-pusher&quot;</span>, <span class="hljs-function">() =&gt;</span> ({
-  ...require.requireActual(<span class="hljs-string">&quot;@harelpls/use-pusher&quot;</span>),
+jest.mock(<span class="hljs-string">&quot;@imokhles/use-pusher&quot;</span>, <span class="hljs-function">() =&gt;</span> ({
+  ...require.requireActual(<span class="hljs-string">&quot;@imokhles/use-pusher&quot;</span>),
   useChannel: <span class="hljs-function">() =&gt;</span> mockChannel,
 }));
 
@@ -289,13 +289,13 @@ test(<span class="hljs-string">&quot;should show a title when it receives a titl
   <span class="hljs-comment">// assert expectations</span>
   expect(<span class="hljs-keyword">await</span> findByText(<span class="hljs-string">&quot;Hello world&quot;</span>)).toBeInTheDocument();
 });</code></pre>
-				<p><a href="https://github.com/mayteio/use-pusher/blob/master/src/__tests__/Example.tsx">Check out the example tests</a> for testing presence channels.</p>
+				<p><a href="https://github.com/imokhles/use-pusher/blob/master/src/__tests__/Example.tsx">Check out the example tests</a> for testing presence channels.</p>
 				<a href="#react-native" id="react-native" style="color: inherit; text-decoration: none;">
 					<h2>React Native</h2>
 				</a>
-				<p>This package comes with React Native support. Import your <code>PusherProvider</code> from <code>@harelpls/use-pusher/react-native</code> instead of the default <code>@harelpls/use-pusher</code>. All exports are re-exported from there.</p>
+				<p>This package comes with React Native support. Import your <code>PusherProvider</code> from <code>@imokhles/use-pusher/react-native</code> instead of the default <code>@imokhles/use-pusher</code>. All exports are re-exported from there.</p>
 				<p>Ensure you add the netinfo package to your project too: <a href="https://github.com/react-native-community/react-native-netinfo"><code>@react-native-community/netinfo</code></a>.</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { PusherProvider, useChannel } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@harelpls/use-pusher/react-native&quot;</span>;</code></pre>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { PusherProvider, useChannel } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@imokhles/use-pusher/react-native&quot;</span>;</code></pre>
 				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
 					<h2>Contributing</h2>
 				</a>
@@ -307,7 +307,7 @@ test(<span class="hljs-string">&quot;should show a title when it receives a titl
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
-				<p>MIT © <a href="https://github.com/@mayteio">@mayteio</a></p>
+				<p>MIT © <a href="https://github.com/@imokhles">@imokhles</a></p>
 				<hr>
 				<p>This hook is created using <a href="https://github.com/hermanya/create-react-hook">create-react-hook</a>.</p>
 			</div>

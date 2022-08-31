@@ -1,8 +1,8 @@
-# `@harelpls/use-pusher`
+# `@imokhles/use-pusher`
 
 > Easy as [React hooks](https://reactjs.org/docs/hooks-intro.html) that integrate with the [`pusher-js`](https://github.com/pusher/pusher-js) library.
 
-[![NPM](https://img.shields.io/npm/v/@harelpls/use-pusher.svg)](https://www.npmjs.com/package/@harelpls/use-pusher) ![Typed](https://badgen.net/badge//types/Typescript?icon=typescript)
+[![NPM](https://img.shields.io/npm/v/@imokhles/use-pusher.svg)](https://www.npmjs.com/package/@imokhles/use-pusher) ![Typed](https://badgen.net/badge//types/Typescript?icon=typescript)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -30,7 +30,7 @@
 ## Install
 
 ```bash
-yarn add @harelpls/use-pusher
+yarn add @imokhles/use-pusher
 ```
 
 ## Hooks
@@ -48,7 +48,7 @@ You must wrap your app with a `PusherProvider` and pass it config props for [`pu
 
 ```typescript
 import React from "react";
-import { PusherProvider } from "@harelpls/use-pusher";
+import { PusherProvider } from "@imokhles/use-pusher";
 
 const config = {
   // required config props
@@ -128,7 +128,7 @@ _Note_: This will bind and unbind to the event on each render. You may want to m
 A helper function to create a **server triggered** event. BYO server (See [Trigger Server](#trigger-server) below). Pass in `triggerEndpoint` prop to `<PusherProvider />`. Any auth headers from `config.auth.headers` automatically get passed to the `fetch` call.
 
 ```typescript
-import { useTrigger } from '@harelpls/use-pusher';
+import { useTrigger } from '@imokhles/use-pusher';
 
 const Example = () => {.
   const trigger = useTrigger("channel-name");
@@ -146,7 +146,7 @@ const Example = () => {.
 Get access to the Pusher instance to do other things.
 
 ```typescript
-import { usePusher } from "@harelpls/use-pusher";
+import { usePusher } from "@imokhles/use-pusher";
 
 const Example = () => {
   const { client } = usePusher();
@@ -184,7 +184,7 @@ export async function handler(event) {
 I hear ya. If you're feeling audacious, you can use [client events](https://pusher.com/docs/channels/using_channels/events#triggering-client-events) to push directly from the client:
 
 ```typescript
-import { useChannel, useClientTrigger } from "@harelpls/use-pusher";
+import { useChannel, useClientTrigger } from "@imokhles/use-pusher";
 
 const Example = () => {
   const channel = useChannel("presence-ca");
@@ -210,7 +210,7 @@ Testing emitted events with jest can be achieved using `jest.mock` and `@testing
 ```typescript
 // Example.tsx
 import React from "react";
-import { useChannel, useEvent } from "@harelpls/use-pusher";
+import { useChannel, useEvent } from "@imokhles/use-pusher";
 
 const Example = () => {
   const [title, setTitle] = useState();
@@ -226,8 +226,8 @@ import { PusherMock, PusherChannelMock } from "pusher-js-mock";
 
 // mock out the result of the useChannel hook
 const mockChannel = new PusherChannelMock();
-jest.mock("@harelpls/use-pusher", () => ({
-  ...require.requireActual("@harelpls/use-pusher"),
+jest.mock("@imokhles/use-pusher", () => ({
+  ...require.requireActual("@imokhles/use-pusher"),
   useChannel: () => mockChannel,
 }));
 
@@ -250,16 +250,16 @@ test("should show a title when it receives a title event", async () => {
 });
 ```
 
-[Check out the example tests](https://github.com/mayteio/use-pusher/blob/master/src/__tests__/Example.tsx) for testing presence channels.
+[Check out the example tests](https://github.com/imokhles/use-pusher/blob/master/src/__tests__/Example.tsx) for testing presence channels.
 
 ## React Native
 
-This package comes with React Native support. Import your `PusherProvider` from `@harelpls/use-pusher/react-native` instead of the default `@harelpls/use-pusher`. All exports are re-exported from there.
+This package comes with React Native support. Import your `PusherProvider` from `@imokhles/use-pusher/react-native` instead of the default `@imokhles/use-pusher`. All exports are re-exported from there.
 
 Ensure you add the netinfo package to your project too: [`@react-native-community/netinfo`](https://github.com/react-native-community/react-native-netinfo).
 
 ```ts
-import { PusherProvider, useChannel } from "@harelpls/use-pusher/react-native";
+import { PusherProvider, useChannel } from "@imokhles/use-pusher/react-native";
 ```
 
 ## Contributing
@@ -271,7 +271,7 @@ Please write tests (100% jest coverage) and types.
 
 ## License
 
-MIT © [@mayteio](https://github.com/@mayteio)
+MIT © [@imokhles](https://github.com/@imokhles)
 
 ---
 

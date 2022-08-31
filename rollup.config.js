@@ -59,7 +59,7 @@ export default [
     plugins,
     output: [
       {
-        // allows users to import from @harelpls/use-pusher/react-native
+        // allows users to import from @imokhles/use-pusher/react-native
         file: "react-native/index.js",
         format: "cjs",
         exports: "named",
